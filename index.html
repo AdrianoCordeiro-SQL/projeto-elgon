@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Elgon Engenharia — One Page</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#hero">
+          <img
+            src="/img/logo-elgon.jpg"
+            alt="Logo Elgon Engenharia"
+            class="logo"
+          />
+          <span class="brand-name">Elgon Engenharia</span>
+        </a>
+
+        <nav class="nav" id="nav">
+          <a href="#hero">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <button id="btn-menu" class="btn-menu" aria-label="Abrir menu">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <h1>Elgon Engenharia</h1>
+          <p>
+            Projetos, manutenção e soluções locais com compromisso e segurança.
+          </p>
+          <a class="btn-primary" href="#servicos">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / INTRO -->
+    <section id="servicos" class="section">
+      <div class="container">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="lead">
+          Atuamos em engenharia civil, manutenção predial e consultoria técnica
+          para empresas locais.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALLERY: 4 blocks image + text -->
+    <section id="galeria" class="section gallery-section">
+      <div class="container">
+        <h2 class="section-title">Projetos Recentes</h2>
+        <div class="grid gallery-grid">
+          <article class="card">
+            <button
+              class="img-btn"
+              data-src="assets/img1.jpg"
+              aria-label="Abrir imagem 1"
+            >
+              <img src="assets/img1-thumb.jpg" alt="Projeto 1" loading="lazy" />
+            </button>
+            <div class="card-body">
+              <h3>Reforma Industrial</h3>
+              <p>Melhorias estruturais e modernização de linhas de produção.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <button
+              class="img-btn"
+              data-src="assets/img2.jpg"
+              aria-label="Abrir imagem 2"
+            >
+              <img src="assets/img2-thumb.jpg" alt="Projeto 2" loading="lazy" />
+            </button>
+            <div class="card-body">
+              <h3>Manutenção Predial</h3>
+              <p>
+                Serviços preventivos e corretivos com cronograma e laudo
+                técnico.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <button
+              class="img-btn"
+              data-src="assets/img3.jpg"
+              aria-label="Abrir imagem 3"
+            >
+              <img src="assets/img3-thumb.jpg" alt="Projeto 3" loading="lazy" />
+            </button>
+            <div class="card-body">
+              <h3>Projeto Estrutural</h3>
+              <p>Dimensionamento e documentação para aprovação e execução.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <button
+              class="img-btn"
+              data-src="assets/img4.jpg"
+              aria-label="Abrir imagem 4"
+            >
+              <img src="assets/img4-thumb.jpg" alt="Projeto 4" loading="lazy" />
+            </button>
+            <div class="card-body">
+              <h3>Instalações Elétricas</h3>
+              <p>Projetos conforme normas e segurança operacional.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer id="contato" class="site-footer section">
+      <div class="container footer-grid">
+        <div>
+          <h3>Contato</h3>
+          <p>Email: contato@elgon.com<br />Telefone: (00) 0000-0000</p>
+        </div>
+
+        <div>
+          <h3>Local</h3>
+          <p>Rua Exemplo, 123 — Centro<br />Cidade - Estado</p>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <p>
+          © <span id="year"></span> Elgon Engenharia — Todos os direitos
+          reservados
+        </p>
+      </div>
+    </footer>
+
+    <!-- Lightbox / Modal for images -->
+    <div
+      id="lightbox"
+      class="lightbox"
+      aria-hidden="true"
+      role="dialog"
+      aria-label="Visualizador de imagens"
+    >
+      <button id="lightbox-close" class="lightbox-close" aria-label="Fechar">
+        ✕
+      </button>
+      <img id="lightbox-img" src="" alt="Imagem ampliada" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
