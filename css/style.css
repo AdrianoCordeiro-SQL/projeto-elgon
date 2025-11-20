@@ -33,13 +33,22 @@ body {
 }
 
 /* leve camada por cima do background (suaviza) */
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   inset: 0;
   background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(2px);
   z-index: -1;
+} */
+
+body::before {
+  content: "";
+  position: fixed; /* fica preso na tela inteira */
+  inset: 0; /* cobre 100% da tela */
+  background: rgba(0, 0, 0, 0.35); /* ESCURECIMENTO AQUI */
+  z-index: -1; /* fica atrás de todo o jogo */
+  pointer-events: none; /* não bloqueia clique */
 }
 
 /* Container */
